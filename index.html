@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>webform1</title>
+<link href="style.css" rel="stylesheet" />
+<script src="script.js"></script>
+</head>
+<body>
+    <div id="form">
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <p id="privacy-statement">We will never share your email with anyone else.</p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{10,}$/" required placeholder="Password">
+
+        <label for="url">Enter URL:</label>
+
+        <input type="url" name="url" id="url"
+               placeholder="Enter URL"
+               pattern="/^(https?://)(www.)?[-a-zA-Z0-9@:%.+~#=]{2,256}.[a-z]{2,6}\b([-a-zA-Z0-9@:%+.~#?&//=]*)/" size="30"
+               required>
+        <input type="checkbox" value="Check me out" id="check" />
+        <label for="check" id="checklabel"> Check me out</label>
+        <br />
+        <input type="button" value="Submit" id="submit">
+
+    </div>
+
+    <div>
+        <a href="https://validator.w3.org/nu/?doc=https://ayaleneh.github.io/WAP_Homework6.2/">
+            <img src="https://manalabs.org/img/w3c-html.png"
+                 alt="Valid HTML 5!" height="31" width="88" />
+        </a>
+
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://ayaleneh.github.io/WAP_Homework6.2/ ">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Valid CSS!" />
+        </a>
+        <a href="http://mumstudents.org/jshint/check.php?uri=https://ayaleneh.github.io/WAP_Homework6.2/">
+            <img src="jslint.png" alt="JavaScript Lint">
+        </a>
+    </div>
+
+
+</body>
+</html>
